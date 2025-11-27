@@ -32,7 +32,7 @@ function addEventListeners() {
 
     const selectPricingPlan = document.getElementById("select-pricing-plan");
     selectPricingPlan.addEventListener("change", async => {
-        selectedPricingIndex = selectPricingPlan.value;
+        currentPricingOptions.selectedPricingIndex = selectPricingPlan.value;
         refreshPricing(currentPricingOptions);
     });
 
