@@ -67,5 +67,5 @@ async function refreshPricing({
     } if (pricingPlan.per_km_pricing !== undefined) {
         price += await getGbfsPricePerKm(pricingPlan, currentDistance)
     }
-    document.getElementById("price").textContent = price + pricingPlan.currency;
+    document.getElementById("price").textContent = price + " " + pricingPlan.currency;
 }
